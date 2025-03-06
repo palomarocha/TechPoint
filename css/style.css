@@ -1,11 +1,11 @@
 @font-face {
     font-family: tango;
-    src: url(/fonts/TangoSans_Bold.ttf)
+    src: url("./fonts/TangoSans_Bold.ttf")
 }
 
 @font-face {
     font-family: sansation;
-    src: url(/fonts/Sansation_Regular.ttf);
+    src: url("./fonts/Sansation_Regular.ttf");
 }
 
 * {
