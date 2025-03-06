@@ -1,0 +1,455 @@
+@font-face {
+    font-family: tango;
+    src: url(/fonts/TangoSans_Bold.ttf)
+}
+
+@font-face {
+    font-family: sansation;
+    src: url(/fonts/Sansation_Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #9a4d99;
+    min-height: auto;
+    padding-top: 60px;
+
+}
+
+header {
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    padding: 20px;
+    height: 100px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.nav {
+    text-align: end;
+    font-family: sansation;
+}
+
+.nav ul li a {
+    padding: 10px 10px;
+    display: inline-block;
+    background-color: #370a44;
+    text-decoration: none;
+    border-radius: 10px;
+
+}
+
+.nav ul li {
+    display: inline;
+
+}
+
+.nav li {
+    display: flex;
+    margin: 5px;
+}
+
+.nav ul {
+    margin: 0;
+    list-style: none;
+
+}
+
+.nav a {
+    color: #e4e2e2;
+    font-size: 14px;
+}
+
+.nav ul li a:hover {
+    background-color: #9a4d99;
+    color: #ffffff;
+}
+
+.menu{
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: none;
+}
+
+h1 {
+    font-family: tango;
+    color: #370a44;
+    font-size: 30px;
+    margin: 5px;
+}
+
+#home-page {
+    background-color: #6a2285;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.container-info {
+    background-color: #ffffff;
+    width: auto;
+    margin: 30px;
+    max-width: 900px;
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+}
+
+.container-info h2 {
+    color: #330341;
+    font-family: tango;
+    font-size: 26px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.content {
+    display: flex;
+}
+
+.container-info img {
+    width: 38%;
+    max-width: 300px;
+    border-radius: 15px;
+    object-fit: cover;
+    margin-left: 20px;
+    margin-bottom: 36px;
+}
+
+.container-info p {
+    font-family: sansation;
+    margin: 50px;
+    font-size: 17px;
+}
+
+#about-us {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+}
+
+.about {
+    text-align: center;
+    margin: 30px;
+    padding: 20px;
+}
+
+.about h3 {
+    color: #330341;
+    font-family: tango;
+    font-size: 28px;
+}
+
+.about p {
+    color: #330341;
+    font-family: sansation;
+    font-weight: bold;
+    margin: 13px;
+    font-size: 16px;
+}
+
+#plans {
+    background-color: #370a44;
+    padding: 50px;
+}
+
+.our-plans h3 {
+    color: #ffffff;
+    font-family: tango;
+    font-size: 25px;
+    text-align: center;
+}
+
+.itens {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 50vh;
+    margin: 0 auto;
+    padding: 200px;
+    gap: 60px;
+
+}
+
+.item {
+    background-color: #ffffff;
+    border-radius: 20px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+}
+
+.itens h4 {
+    color: #330341;
+    font-family: tango;
+    font-size: 23px;
+    margin: 20px;
+    margin-top: 30px;
+
+}
+
+.itens span {
+    color: #272029;
+    font-family: sansation;
+    font-weight: bold;
+    font-size: 19px;
+    padding-left: 20px;
+}
+
+.itens ul {
+    font-family: sansation;
+    margin: 20px;
+}
+
+.itens li {
+    margin-left: 15px;
+}
+
+.itens button {
+    font-family: sansation;
+    font-size: 15px;
+    background-color: #330341;
+    color: #ffffff;
+    border: none;
+    border-radius: 20px;
+    margin: 20px auto;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+}
+
+.itens button:hover {
+    background-color: #9a4d99;
+}
+
+#contato {
+    background-color: #ffffff;
+}
+
+#contato h3 {
+    color: #330341;
+    font-family: tango;
+    text-align: center;
+    font-size: 22px;
+    padding: 20px;
+}
+
+#contato p {
+    color: #ffffff;
+    font-family: sansation;
+    font-size: 17px;
+    text-align: center;
+    padding: 20px;
+
+
+}
+
+.contact {
+    background-color: #330341;
+    width: 60%;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+.contact ul {
+    color: #ffffff;
+    font-family: sansation;
+    margin: 20px;
+}
+
+.contact li {
+    margin: 15px;
+}
+
+.contact a {
+    color: #b6b6b6;
+}
+
+.contact a:hover {
+    color: #9a4d99;
+}
+
+@media (max-width: 1179px) {
+    header {
+        height: 120px;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .nav ul li {
+        display: inline-block;
+        margin: 0 10px;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-info img {
+        width: 80%;
+        margin: 20px 0;
+    }
+
+    .itens {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        padding: 50px 20px;
+        gap: 20px;
+    }
+
+    .item {
+        width: 80%;
+        max-width: 400px;
+    }
+
+    .contact {
+        width: 90%;
+    }
+}
+
+@media (max-width: 957px) {
+    header {
+        height: auto;
+        padding: 15px;
+    }
+
+    .nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .nav ul li a {
+        display: inline-block;
+        padding: 10px;
+    }
+
+    .container-info {
+        padding: 20px;
+    }
+
+    .container-info h2 {
+        font-size: 22px;
+    }
+
+    .container-info p {
+        font-size: 15px;
+        margin: 20px 0;
+    }
+
+    .itens {
+        padding: 20px;
+    }
+
+    .contact {
+        padding: 15px;
+    }
+
+    .contact ul {
+        text-align: center;
+    }
+}
+
+@media (max-width: 483px) {
+    h1 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        right: 20px;
+        background: #370a44;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .nav ul li {
+        margin: 10px 0;
+    }
+
+    .nav ul li a {
+        display: block;
+        padding: 10px;
+        text-align: center;
+    }
+    .menu {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 25px;
+        
+    }
+    
+    .container-info h2 {
+        font-size: 20px;
+    }
+    
+    .container-info p {
+        font-size: 14px;
+    }
+    
+    .itens h4 {
+        font-size: 20px;
+    }
+    
+    .itens span {
+        font-size: 16px;
+    }
+    
+    .itens button {
+        width: 90px;
+        height: 35px;
+        font-size: 14px;
+    }
+    
+    .item {
+        width: 320px;
+    }
+    
+    .contact p,
+    .contact ul li {
+        font-size: 14px;
+    }
+}
